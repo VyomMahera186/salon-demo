@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luxe Studio — Premium Salon & Beauty</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Custom cursor -->
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+
+<!-- Demo Banner -->
+<div class="demo-banner">
+  🚀 This is a demo website — Get your salon website in 3 days. WhatsApp now &nbsp;<a href="#contact">Get in touch →</a>
+</div>
+
+<!-- Navbar -->
+<nav id="navbar">
+  <a href="#hero" class="nav-logo">Luxe<span>Studio</span></a>
+  <ul class="nav-links">
+    <li><a href="#services">Services</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <a href="https://wa.me/91YOURNUMBER?text=Hi%20I%20want%20a%20website%20like%20this%20for%20my%20salon" 
+   target="_blank" 
+   class="nav-cta">
+   Get This Website
+</a>
+  <div class="hamburger" id="hamburger">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#services" onclick="closeMobile()">Services</a>
+  <a href="#pricing" onclick="closeMobile()">Pricing</a>
+  <a href="#gallery" onclick="closeMobile()">Gallery</a>
+  <a href="#about" onclick="closeMobile()">About</a>
+  <a href="#contact" onclick="closeMobile()">Contact</a>
+  <a href="https://wa.me/91YOURNUMBER?text=Hi%20I%20want%20a%20website%20like%20this%20for%20my%20salon" 
+   target="_blank" 
+   class="nav-cta" onclick="closeMobile()">
+   Get This Website
+</a>
+</div>
+
+<!-- ═══════════════════════════════════════════ HERO ════════ -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grain"></div>
+  <div class="hero-lines"></div>
+
+  <div class="hero-inner">
+    <div>
+      <p class="hero-eyebrow fade-up">Premium Beauty Studio</p>
+      <h1 class="hero-title fade-up delay-1">
+        Where Beauty<br>Becomes <em>Art</em>
+      </h1>
+      <p class="hero-sub fade-up delay-2">
+        Step into a world of refined elegance. Our master stylists craft bespoke beauty experiences tailored to your unique essence.
+      </p>
+      <div class="hero-btns fade-up delay-3">
+        <a href="https://wa.me/91YOURNUMBER?text=Hi%20I%20want%20a%20website%20like%20this%20for%20my%20salon" 
+   target="_blank" 
+   class="btn-primary">
+   Get This Website
+</a>
+        <a href="#gallery" class="btn-outline">View Our Work</a>
+      </div>
+    </div>
+
+    <div class="hero-3d fade-right delay-2">
+      <div class="scene-3d">
+        <div class="glow-ring"></div>
+        <div class="object-3d">
+          <svg class="scissors-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="goldGrad" cx="50%" cy="30%">
+                <stop offset="0%" stop-color="#f5e4bc"/>
+                <stop offset="40%" stop-color="#c9a96e"/>
+                <stop offset="100%" stop-color="#7a5f30"/>
+              </radialGradient>
+              <radialGradient id="goldGrad2" cx="50%" cy="30%">
+                <stop offset="0%" stop-color="#e8d5b0"/>
+                <stop offset="40%" stop-color="#b8904e"/>
+                <stop offset="100%" stop-color="#6a4f20"/>
+              </radialGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="4" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <!-- Scissors body -->
+            <g filter="url(#glow)" transform="translate(150,150)">
+              <!-- Blade 1 -->
+              <path d="M-10,-80 Q-5,-40 20,60 Q10,70 0,60 Q-20,-30 -20,-80 Z"
+                    fill="url(#goldGrad)" opacity="0.95"/>
+              <!-- Blade 2 -->
+              <path d="M10,-80 Q5,-40 -20,60 Q-10,70 0,60 Q20,-30 20,-80 Z"
+                    fill="url(#goldGrad2)" opacity="0.9"/>
+              <!-- Pivot -->
+              <circle cx="0" cy="-10" r="12" fill="url(#goldGrad)" stroke="#f5e4bc" stroke-width="1"/>
+              <circle cx="0" cy="-10" r="5" fill="#1a1208"/>
+              <!-- Handle ring 1 -->
+              <ellipse cx="-25" cy="80" rx="18" ry="22" fill="none" stroke="url(#goldGrad)" stroke-width="4"/>
+              <!-- Handle ring 2 -->
+              <ellipse cx="25" cy="80" rx="18" ry="22" fill="none" stroke="url(#goldGrad2)" stroke-width="4"/>
+            </g>
+            <!-- Decorative stars -->
+            <g opacity="0.6">
+              <path d="M60,40 L63,50 L73,50 L65,56 L68,66 L60,60 L52,66 L55,56 L47,50 L57,50Z" fill="#c9a96e"/>
+              <path d="M240,200 L242,207 L249,207 L243,211 L246,218 L240,214 L234,218 L237,211 L231,207 L238,207Z" fill="#c9a96e" opacity="0.5"/>
+              <path d="M50,220 L52,226 L58,226 L53,230 L55,236 L50,232 L45,236 L47,230 L42,226 L48,226Z" fill="#c9a96e" opacity="0.4"/>
+            </g>
+          </svg>
+        </div>
+        <div class="sparkles">
+          <div class="sp"></div><div class="sp"></div><div class="sp"></div>
+          <div class="sp"></div><div class="sp"></div><div class="sp"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+</section>
+
+<!-- ═══════════════════════════════════════════ SERVICES ════════ -->
+<section id="services">
+  <div class="container">
+    <div class="services-header">
+      <p class="section-label fade-up">What We Offer</p>
+      <h2 class="section-title fade-up delay-1">Curated <em>Services</em><br>for Every Vision</h2>
+      <p class="section-sub fade-up delay-2">Each service is a ritual — meticulously crafted to enhance your natural beauty with artistry and care.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card fade-up delay-1">
+        <div class="service-card-glow"></div>
+        <span class="service-icon">✂️</span>
+        <h3 class="service-name">Hair Styling</h3>
+        <p class="service-desc">From sleek blowouts to editorial cuts — our stylists sculpt each look with precision and passion.</p>
+        <p class="service-from">From ₹800</p>
+      </div>
+
+      <div class="service-card fade-up delay-2">
+        <div class="service-card-glow"></div>
+        <span class="service-icon">🎨</span>
+        <h3 class="service-name">Hair Color</h3>
+        <p class="service-desc">Balayage, ombré, highlights — we transform your hair into a living canvas of colour and light.</p>
+        <p class="service-from">From ₹2,500</p>
+      </div>
+
+      <div class="service-card fade-up delay-3">
+        <div class="service-card-glow"></div>
+        <span class="service-icon">✨</span>
+        <h3 class="service-name">Skincare & Facial</h3>
+        <p class="service-desc">Bespoke facials using luxury formulations to restore radiance, clarity, and timeless glow.</p>
+        <p class="service-from">From ₹1,200</p>
+      </div>
+
+      <div class="service-card fade-up delay-2">
+        <div class="service-card-glow"></div>
+        <span class="service-icon">💄</span>
+        <h3 class="service-name">Makeup Artistry</h3>
+        <p class="service-desc">Editorial to bridal — flawless makeup that lasts all day and makes you feel extraordinary.</p>
+        <p class="service-from">From ₹1,500</p>
+      </div>
+
+      <div class="service-card fade-up delay-3">
+        <div class="service-card-glow"></div>
+        <span class="service-icon">💅</span>
+        <h3 class="service-name">Nail Art</h3>
+        <p class="service-desc">Intricate nail designs — gel, acrylics, or classic lacquer — every hand a masterpiece.</p>
+        <p class="service-from">From ₹600</p>
+      </div>
+
+      <div class="service-card fade-up delay-4">
+        <div class="service-card-glow"></div>
+        <span class="service-icon">👰</span>
+        <h3 class="service-name">Bridal Package</h3>
+        <p class="service-desc">A complete bridal journey — hair, makeup, skincare, and nails — your most beautiful day, perfected.</p>
+        <p class="service-from">From ₹15,000</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ PRICING ════════ -->
+<section id="pricing">
+  <div class="container">
+    <p class="section-label fade-up">Investment in Beauty</p>
+    <h2 class="section-title fade-up delay-1">Transparent <em>Pricing</em></h2>
+    <p class="section-sub fade-up delay-2">Simple, honest pricing — because luxury should never come with hidden surprises.</p>
+
+    <div class="pricing-grid">
+
+      <div class="pricing-card fade-up delay-1">
+        <p class="pricing-tier">Essentials</p>
+        <div class="pricing-price"><sup>₹</sup>1,999</div>
+        <p class="pricing-desc">The perfect introduction to the Luxe Studio experience.</p>
+        <ul class="pricing-features">
+          <li>Classic Hair Cut & Style</li>
+          <li>Scalp Treatment</li>
+          <li>Basic Facial (30 min)</li>
+          <li>Hand & Nail Polish</li>
+          <li>Complimentary Consultation</li>
+        </ul>
+        <a href="https://wa.me/91YOURNUMBER?text=I%20am%20interested%20in%20this%20salon%20website%20demo" 
+   target="_blank" 
+   class="pricing-btn">
+   Get This Package
+</a>
+      </div>
+
+      <div class="pricing-card featured fade-up delay-2">
+        <p class="pricing-tier">Signature</p>
+        <div class="pricing-price"><sup>₹</sup>4,999</div>
+        <p class="pricing-desc">Our most loved package — a true indulgence from head to toe.</p>
+        <ul class="pricing-features">
+          <li>Designer Cut & Blowout</li>
+          <li>Balayage or Highlights</li>
+          <li>Luxury Facial (60 min)</li>
+          <li>Gel Manicure & Pedicure</li>
+          <li>Professional Makeup Look</li>
+          <li>Take-Home Beauty Kit</li>
+        </ul>
+       <a href="https://wa.me/91YOURNUMBER?text=I%20am%20interested%20in%20this%20salon%20website%20demo" 
+   target="_blank" 
+   class="pricing-btn">
+   Get This Package
+</a>
+      </div>
+
+      <div class="pricing-card fade-up delay-3">
+        <p class="pricing-tier">Prestige</p>
+        <div class="pricing-price"><sup>₹</sup>9,999</div>
+        <p class="pricing-desc">The ultimate luxury experience — reserved for those who deserve the best.</p>
+        <ul class="pricing-features">
+          <li>Full Day Luxury Experience</li>
+          <li>Master Stylist (Cut + Colour)</li>
+          <li>Premium Anti-Ageing Facial</li>
+          <li>Nail Art (both hands & feet)</li>
+          <li>Bridal/Editorial Makeup</li>
+          <li>Champagne & Refreshments</li>
+          <li>Luxury Beauty Hamper</li>
+        </ul>
+        <a href="https://wa.me/91YOURNUMBER?text=I%20am%20interested%20in%20this%20salon%20website%20demo" 
+   target="_blank" 
+   class="pricing-btn">
+   Get This Package
+</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ GALLERY ════════ -->
+<section id="gallery">
+  <div class="container">
+    <p class="section-label fade-up">Our Portfolio</p>
+    <h2 class="section-title fade-up delay-1">Every Look, a <em>Story</em></h2>
+    <p class="section-sub fade-up delay-2">A glimpse into the artistry that unfolds within our studio walls every single day.</p>
+  </div>
+  <div class="container">
+    <div class="gallery-grid">
+
+      <div class="gallery-item fade-up">
+        <div class="gallery-bg">
+          <div class="gallery-fill g1">
+            <div class="gallery-pattern">
+              <svg viewBox="0 0 100 100" fill="none">
+                <circle cx="50" cy="50" r="30" stroke="#c9a96e" stroke-width="0.5"/>
+                <circle cx="50" cy="50" r="20" stroke="#c9a96e" stroke-width="0.5"/>
+                <path d="M20,50 Q35,20 50,50 Q65,80 80,50" stroke="#c9a96e" stroke-width="0.5" fill="none"/>
+              </svg>
+            </div>
+            <div class="gallery-label">
+              <p class="gallery-label-text">Balayage</p>
+              <p class="gallery-label-sub">Sun-kissed perfection</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item fade-up delay-1">
+        <div class="gallery-bg">
+          <div class="gallery-fill g2">
+            <div class="gallery-label">
+              <p class="gallery-label-text">Bridal Look</p>
+              <p class="gallery-label-sub">Wedding day magic</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item fade-up delay-2">
+        <div class="gallery-bg">
+          <div class="gallery-fill g3">
+            <div class="gallery-label">
+              <p class="gallery-label-text">Skin Glow</p>
+              <p class="gallery-label-sub">Radiant facial</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item fade-up delay-3">
+        <div class="gallery-bg">
+          <div class="gallery-fill g4">
+            <div class="gallery-label">
+              <p class="gallery-label-text">Nail Couture</p>
+              <p class="gallery-label-sub">Floral gel art</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item fade-up delay-1">
+        <div class="gallery-bg">
+          <div class="gallery-fill g5">
+            <div class="gallery-label">
+              <p class="gallery-label-text">Smokey Eye</p>
+              <p class="gallery-label-sub">Editorial makeup</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item fade-up delay-2">
+        <div class="gallery-bg">
+          <div class="gallery-fill g6">
+            <div class="gallery-label">
+              <p class="gallery-label-text">Colour Melt</p>
+              <p class="gallery-label-sub">Ombré mastery</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item fade-up delay-3">
+        <div class="gallery-bg">
+          <div class="gallery-fill g7">
+            <div class="gallery-label">
+              <p class="gallery-label-text">Blowout Glam</p>
+              <p class="gallery-label-sub">Classic volume</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="gallery-item fade-up delay-4">
+        <div class="gallery-bg">
+          <div class="gallery-fill g8">
+            <div class="gallery-label">
+              <p class="gallery-label-text">Updo Elegance</p>
+              <p class="gallery-label-sub">Bridal styling</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ ABOUT ════════ -->
+<section id="about">
+  <div class="container">
+    <div class="about-inner">
+
+      <div class="about-visual fade-left">
+        <div class="about-frame">
+          <div class="about-frame-inner">
+            <svg viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg" style="width:50%;opacity:0.3">
+              <path d="M100,20 C60,20 30,50 30,90 C30,130 60,160 100,160 C140,160 170,130 170,90 C170,50 140,20 100,20Z" stroke="#c9a96e" stroke-width="1" fill="none"/>
+              <path d="M60,160 C40,200 30,250 40,280" stroke="#c9a96e" stroke-width="1" fill="none"/>
+              <path d="M140,160 C160,200 170,250 160,280" stroke="#c9a96e" stroke-width="1" fill="none"/>
+              <line x1="100" y1="160" x2="100" y2="280" stroke="#c9a96e" stroke-width="1"/>
+            </svg>
+          </div>
+          <!-- Decorative gradient overlay -->
+          <div style="position:absolute;inset:0;background:linear-gradient(to bottom right, rgba(201,169,110,0.05), rgba(196,125,125,0.05));"></div>
+        </div>
+        <div class="about-badge">
+          <span class="about-badge-num">8+</span>
+          <span class="about-badge-text">Years of<br>Excellence</span>
+        </div>
+        <div class="about-quote">
+          <p class="about-quote-text">"Beauty begins the moment you decide to be yourself."</p>
+          <p class="about-quote-author">— Coco Chanel</p>
+        </div>
+      </div>
+
+      <div class="fade-right">
+        <p class="section-label">Our Story</p>
+        <h2 class="section-title">Crafted with <em>Passion</em></h2>
+        <p class="about-owner">
+          I started Luxe Studio with a single vision: to create a sanctuary where every client feels seen, celebrated, and transformed. After training with master stylists in Paris and Mumbai, I returned home with a fire to bring world-class beauty to our city.
+          <br><br>
+          Today, our team of twelve passionate artists serve over 500 clients monthly — each appointment a carefully choreographed ritual. We don't just style hair or apply makeup. We restore confidence, celebrate milestones, and create memories that last a lifetime.
+        </p>
+        <div class="owner-sig">Priya Mehra</div>
+        <p style="font-size:0.7rem;color:var(--text-muted);letter-spacing:0.1em;margin-top:4px;">Founder & Creative Director</p>
+
+        <div class="about-stats">
+          <div class="stat fade-up delay-1">
+            <div class="stat-num" data-count="500">0</div>
+            <p class="stat-label">Happy Clients</p>
+          </div>
+          <div class="stat fade-up delay-2">
+            <div class="stat-num" data-count="8">0</div>
+            <p class="stat-label">Years Active</p>
+          </div>
+          <div class="stat fade-up delay-3">
+            <div class="stat-num" data-count="49" data-suffix="★" data-decimal="true">0</div>
+            <p class="stat-label">Rating</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ TESTIMONIALS ════════ -->
+<section id="testimonials">
+  <div class="container">
+    <p class="section-label fade-up">Client Love</p>
+    <h2 class="section-title fade-up delay-1">Stories of <em>Transformation</em></h2>
+
+    <div class="testimonials-grid">
+
+      <div class="testimonial-card fade-up delay-1">
+        <div class="testimonial-quote-icon">"</div>
+        <p class="testimonial-stars">★★★★★</p>
+        <p class="testimonial-text">I walked in nervous about my wedding hair — I walked out feeling like an actual goddess. Priya understood my vision completely. The entire team is simply extraordinary.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">A</div>
+          <div>
+            <p class="author-name">Aisha Kapoor</p>
+            <p class="author-tag">Bridal Client • Mumbai</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up delay-2">
+        <div class="testimonial-quote-icon">"</div>
+        <p class="testimonial-stars">★★★★★</p>
+        <p class="testimonial-text">The Signature package is worth every rupee. I've never had a facial this luxurious — my skin literally glowed for two weeks. This is the only salon I trust now.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">R</div>
+          <div>
+            <p class="author-name">Rhea Singhania</p>
+            <p class="author-tag">Skincare Client • Ahmedabad</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial-card fade-up delay-3">
+        <div class="testimonial-quote-icon">"</div>
+        <p class="testimonial-stars">★★★★★</p>
+        <p class="testimonial-text">From the moment I stepped in, I felt like royalty. The nail art alone was a masterpiece. I've recommended Luxe Studio to every woman I know — it's on another level.</p>
+        <div class="testimonial-author">
+          <div class="author-avatar">S</div>
+          <div>
+            <p class="author-name">Shreya Patel</p>
+            <p class="author-tag">Loyal Member • Surat</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ CONTACT ════════ -->
+<section id="contact">
+  <div class="container">
+    <p class="section-label fade-up">Get In Touch</p>
+    <h2 class="section-title fade-up delay-1">Begin Your <em>Journey</em></h2>
+
+    <div class="contact-inner">
+
+      <div class="fade-left">
+        <h3>We'd love to<br>hear from you</h3>
+        <div class="contact-items">
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <p class="contact-detail-label">Phone</p>
+              <p class="contact-detail-val">+91 98765 43210</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <p class="contact-detail-label">Service Area</p>
+              <p class="contact-detail-val">Serving Salon Owners Across India — 100% Online</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div>
+              <p class="contact-detail-label">Availability</p>
+            <p class="contact-detail-val"> Daily: 11:00 AM – 1:30 AM<br> Quick Response on WhatsApp</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-socials">
+           <a href="https://wa.me/91YOURNUMBER" class="social-btn whatsapp" target="_blank">
+  <i class="fab fa-whatsapp"></i> WhatsApp
+</a>
+           <a href="#" class="social-btn"><i class="fab fa-instagram"></i> Instagram</a>
+           <a href="#" class="social-btn"><i class="fab fa-facebook"></i> Facebook</a>
+        </div>
+      </div>
+
+      <form class="contact-form fade-right" onsubmit="handleSubmit(event)">
+
+  <div class="form-row">
+    <div class="form-group">
+      <label class="form-label">First Name</label>
+      <input type="text" name="firstName" class="form-input" placeholder="Priya" required>
+    </div>
+    <div class="form-group">
+      <label class="form-label">Last Name</label>
+      <input type="text" name="lastName" class="form-input" placeholder="Sharma" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Email Address</label>
+    <input type="email" name="email" class="form-input" placeholder="you@example.com" required>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Phone Number</label>
+    <input type="tel" name="phone" class="form-input" placeholder="+91 98765 43210" required>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Service of Interest</label>
+    <div class="custom-select" id="serviceSelect">
+  <div class="select-selected">Select a Service</div>
+  
+  <div class="select-options">
+    <div data-value="Bridal Package">Bridal Package</div>
+    <div data-value="Hair Coloring">Hair Coloring</div>
+    <div data-value="Facial">Facial</div>
+    <div data-value="Makeup">Makeup</div>
+    <div data-value="Bridal Makeup">Bridal Makeup</div>
+    <div data-value="Hair Smoothening">Hair Smoothening</div>
+    <div data-value="Keratin Treatment">Keratin Treatment</div>
+    <div data-value="Party Makeup">Party Makeup</div>
+    <div data-value="Hair Spa">Hair Spa</div>
+  </div>
+</div>
+
+<!-- Hidden input (IMPORTANT for form submission) -->
+<input type="hidden" name="service" id="serviceInput" required>
+  </div>
+
+  <div class="form-group">
+    <label class="form-label">Message</label>
+    <textarea name="message" class="form-textarea" placeholder="Tell us about your dream look..." required></textarea>
+  </div>
+
+  <button type="submit" class="form-submit">Send Message ✦</button>
+
+</form>
+
+    </div>
+  </div>
+</section>
+
+<!-- ═══════════════════════════════════════════ FOOTER ════════ -->
+<footer>
+  <div>
+    <div class="footer-logo">Luxe<em>Studio</em></div>
+    <div class="footer-tagline">Where Beauty Becomes Art — Est. 2016</div>
+  </div>
+  <div class="footer-copy">
+    <p>© 2024 Luxe Studio. All rights reserved.</p>
+    <p style="margin-top:6px;font-size:0.65rem;opacity:0.6;">Demo site crafted with ✦ for salon owners</p>
+  </div>
+  <div class="footer-socials">
+    <a href="#" class="footer-social"><i class="fa-brands fa-instagram"></i></a>
+    <a href="#" class="footer-social"><i class="fa-brands fa-facebook"></i></a>
+    <a href="#" class="footer-social"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="#" class="footer-social"><i class="fa-brands fa-youtube"></i></a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
