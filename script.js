@@ -80,7 +80,7 @@ function handleSubmit(e) {
   const message = form.message.value.trim();
 
   // Build message
-  const text = `Hi, I just filled your form:
+  const text = `Hi, I'm interested in getting a salon website.
 
 Name: ${firstName} ${lastName}
 Email: ${email}
@@ -91,14 +91,14 @@ Message: ${message}`;
   const encodedText = encodeURIComponent(text);
 
   // 🔴 CHANGE THIS TO YOUR NUMBER
-  const whatsappNumber = "919876543210";
+  const whatsappNumber = "9909170129";
 
   // Open WhatsApp
   window.open(`https://wa.me/${whatsappNumber}?text=${encodedText}`, "_blank");
 
   // UI feedback
   const btn = form.querySelector('.form-submit');
-  btn.textContent = '✓ Message Sent!';
+  btn.textContent = '✓ Opening WhatsApp...';
   btn.style.background = '#2d6a2d';
   btn.style.color = '#fff';
 
